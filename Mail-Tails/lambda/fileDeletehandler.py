@@ -4,7 +4,7 @@ import re
 from io import StringIO
 
 s3_client = boto3.client('s3')
-ses_client = boto3.client('ses', region_name='ap-south-1')
+ses_client = boto3.client('ses', region_name='us-east-1')
 
 
 def is_valid_email(email):
@@ -49,7 +49,7 @@ def lambda_handler(event, context):
         # Send the rejection email via SES
         try:
             ses_client.send_email(
-                Source='guptashrey555@gmail.com',
+                Source='facumorales2908@gmail.com',
                 Destination={'ToAddresses': [email]},
                 Message={
                     'Subject': {'Data': "Mail-Matrix: Stream - Application Status"},
