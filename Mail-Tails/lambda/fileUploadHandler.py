@@ -52,7 +52,7 @@ def lambda_handler(event, context):
                 Source='facumorales2908@gmail.com',
                 Destination={'ToAddresses': [email]},
                 Message={
-                    'Subject': {'Data': "Welcome to Mail-Matrix: Stream!"},
+                    'Subject': {'Data': "Welcome to Mail-Tails: Stream!"},
                     'Body': {'Html': {'Data': email_body}}
                 }
             )
@@ -64,3 +64,4 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'body': json.dumps('Emails processed successfully!')
     }
+

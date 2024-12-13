@@ -61,7 +61,7 @@ def lambda_handler(event, context):
         for recipient in recipients:
             try:
                 response = ses.send_email(
-                    Source='guptashrey555@gmail.com',
+                    Source='facumorales2908@gmail.com',
                     Destination={
                         'ToAddresses': [recipient]
                     },
@@ -92,7 +92,7 @@ def lambda_handler(event, context):
         for recipient in recipients:
             try:
                 response = ses.send_email(
-                    Source='guptashrey555@gmail.com',
+                    Source='facumorales2908@gmail.com',
                     Destination={
                         'ToAddresses': [recipient]
                     },
@@ -115,3 +115,4 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'body': json.dumps('Processed S3 event successfully!')
     }
+
