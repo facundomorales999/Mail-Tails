@@ -8,7 +8,7 @@ Mail Tails es un sistema automatizado para el envío masivo de correos electrón
 
 ## Arquitectura
 
-![Arquitectura](/Mail-Tails/local/documentos/Arquitectura.png)
+! [Arquitectura](/Mail-Tails/local/documentos/Arquitectura.png)
 
 - Amazon EventBridge
 - Amazon CloudWatch
