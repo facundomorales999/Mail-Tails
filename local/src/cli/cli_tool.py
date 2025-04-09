@@ -22,11 +22,15 @@ def main():
 
     # Render the email body for each recipient and send the email
     for recipient in recipients:
-        email = recipient['email']
+        email = recipient.get('email')
         context = {"name": recipient.get('name', 'Valued Customer')}
-        body = render_template(template_file, context) 
-        response = send_email(email, subject, body)
-        print(f"Email sent to {email}! Message ID: {response['MessageId']}")
+
+        try:
+            body = render_template(template_file, context) 
+            response = send_email(email, subject, body)
+            print(f"✅ Email sent to {email}! Message ID: {response['MessageId']}")
+        except Exception as e:
+            print(f"❌ Failed to send email to {email}: {str(e)}")
 
 if __name__ == "__main__":
     main()

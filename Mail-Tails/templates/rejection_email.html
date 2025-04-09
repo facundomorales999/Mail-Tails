@@ -1,75 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Application Status - Mail Tails: Stream</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        table {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            border-spacing: 0;
-            border-collapse: collapse;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        h1 {
-            color: #e74c3c;
-            font-size: 24px;
-            margin: 20px 0;
-        }
-        p {
-            color: #555555;
-            font-size: 16px;
-            line-height: 1.6;
-            margin: 10px 0;
-        }
-        .header {
-            background-color: #e74c3c;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-        }
-        .content {
-            padding: 20px;
-            text-align: left;
-        }
-        .footer {
-            padding: 20px;
-            font-size: 12px;
-            color: #777777;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        a {
-            color: #e74c3c;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Application Status - Mail Tails: Stream</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    table {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      border-spacing: 0;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .header {
+      background-color: #b91c1c;
+      color: #ffffff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .content {
+      padding: 30px 20px;
+      color: #333333;
+    }
+
+    .content p {
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    .footer {
+      background-color: #f9f9f9;
+      padding: 20px;
+      font-size: 12px;
+      color: #888888;
+      text-align: center;
+    }
+
+    a {
+      color: #b91c1c;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <td class="header">
-                <h1>Application Status Update</h1>
-            </td>
-        </tr>
-        <tr>
-            <td class="content">
-                <p>Dear {{ name }},</p>
-                <p>Thank you for your interest in joining <strong>Mail Tails: Stream</strong>. We have carefully reviewed your application, but unfortunately, we will not be moving forward with your candidacy at this time.</p>
-                <p>We appreciate the effort you put into your application and encourage you to reapply in the future when other opportunities arise.</p>
-                <p>Feel free to explore our services and projects via our <a href="https://github.com/facundomorales999/Mail-Tails">GitHub Repository</a>.</p>
-            </td>
-        </tr>
-        <tr>
-            <td class="footer">
-                <p>&copy
+  <table>
+    <tr>
+      <td class="header">
+        <h1>Application Status Update</h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="content">
+        <p>Dear {{ name }},</p>
+        <p>Thank you for your interest in joining <strong>Mail Tails: Stream</strong>. We sincerely appreciate the time and effort you invested in your application.</p>
+        <p>After careful consideration, we regret to inform you that we will not be moving forward with your candidacy at this time.</p>
+        <p>We encourage you to stay connected and reapply in the future, as new opportunities may arise that better match your profile.</p>
+        <p>Meanwhile, feel free to explore our services and contributions on our <br> <a href="https://github.com/facundomorales999/Mail-Tails">GitHub Repository</a>.</p>
+        <p>We wish you all the best in your future endeavors.</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="footer">
+        <p>&copy; 2025 Mail-Tails: Stream. All rights reserved.</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
